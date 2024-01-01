@@ -1,7 +1,7 @@
-package com.ken.cruddemo.rest;
+package com.luv2code.springboot.cruddemo.rest;
 
-import com.ken.cruddemo.entity.Employee;
-import com.ken.cruddemo.service.EmployeeService;
+import com.luv2code.springboot.cruddemo.entity.Employee;
+import com.luv2code.springboot.cruddemo.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

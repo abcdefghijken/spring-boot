@@ -1,10 +1,10 @@
-package com.ken.cruddemo.dao;
+package com.luv2code.springboot.cruddemo.service;
 
-import com.ken.cruddemo.entity.Employee;
+import com.luv2code.springboot.cruddemo.entity.Employee;
 
 import java.util.List;
 
-public interface EmployeeDAO {
+public interface EmployeeService {
     List<Employee> findAll();
     Employee findById(int id);
     Employee save(Employee employee);
