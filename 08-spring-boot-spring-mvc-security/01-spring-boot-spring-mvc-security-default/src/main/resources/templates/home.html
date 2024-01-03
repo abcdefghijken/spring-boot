@@ -17,6 +17,19 @@ Welcome to the Company!
 User: <span sec:authentication="principal.username"></span>
 <br><br>
 Role(s): <span sec:authentication="principal.authorities"></span>
+
+<div sec:authorize="hasRole('MANAGER')">
+    <p>
+        <a th:href="@{/leaders}">Leadership Meeting</a> (Only for Manager peeps)
+    </p>
+</div>
+
+<div sec:authorize="hasRole('ADMIN')">
+    <p>
+        <a th:href="@{/systems}">IT Systems Meeting</a> (Only for Admin peeps)
+    </p>
+</div>
+
 <hr>
 <!-- by default, must use POST for logout -->
 <form action="#" th:action="@{/logout}" method="POST">
